@@ -19,13 +19,13 @@ export default function Home() {
 				<Image className="object-cover" priority src={isSm ? "/imgs/main.JPG" : "/imgs/main-desktop.JPG"} fill alt="Tatis Voronetska at the piano"></Image>
 			</div>
 			<div className="relative min-h-[60svh] w-[100svw] lg:min-h-[80svh] flex items-center justify-center">
-				<p className="text-t-white text-xl lg:text-2xl whitespace-break-spaces text-center">
+				<p className="text-t-white text-sm lg:text-2xl whitespace-break-spaces text-center">
 					Do not go gentle into that good night,{"\n"}Old age should burn and rave at close of day;{"\n"}Rage, rage against the dying of the light.{"\n"}
 					{"\n"}Though wise men at their end know dark is right,{"\n"}Because their words had forked no lightning they{"\n"}Do not go gentle into that good
 					night.
 				</p>
 			</div>
-			<div className="relative min-h-[80svh] w-[100svw] overflow-x-auto lg:min-h-[80svh]">
+			<div className="relative min-h-[90svh] w-[100svw] overflow-x-auto lg:min-h-[80svh]">
 				<p className="text-t-white text-4xl md:text-5xl sticky left-2 ml-[10svw] lg:ml-[20svw] mb-4 font-semibold">Épocas y Compositores</p>
 				<div className="grid grid-cols-[repeat(4_,_200px)] h-[500px] gap-x-2 pl-[10svw] lg:pl-[20svw]">
 					<div className="relative">
