@@ -12,8 +12,8 @@ export default function Home() {
 			<Navbar />
 			<div className="relative min-h-[90svh] w-[100svw] lg:min-h-[80svh]">
 				<div className="z-40 p-3 bg-[linear-gradient(45deg,_rgb(255_255_255_/_51%)_0%,_rgba(0,_0,_0,_0)_36%)] lg:bg-[linear-gradient(45deg,_rgb(0_0_0)_0%,_rgba(0,_0,_0,_0)_46%)]  absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end">
-					<h4 className="text-t-white text-3xl">Tatiana</h4>
-					<h1 className="text-t-white text-5xl">Voronetska</h1>
+					<h4 className="text-t-white text-5xl lg:text-7xl">Tatiana</h4>
+					<h1 className="text-t-white text-7xl lg:text-9xl">Voronetska</h1>
 					<p className="text-t-white font-body font-extralight text-lg">Aprender no tiene límites</p>
 				</div>
 				<Image className="object-cover" priority src={isSm ? "/imgs/main.JPG" : "/imgs/main-desktop.JPG"} fill alt="Tatis Voronetska at the piano"></Image>
