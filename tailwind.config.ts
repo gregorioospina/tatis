@@ -4,6 +4,10 @@ const config: Config = {
 	content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
+			fontFamily: {
+				title: "var(--playfair)",
+				body: "var(--opensans)",
+			},
 			colors: {
 				"t-black": "#333333",
 				"t-white": "#ECECEC",

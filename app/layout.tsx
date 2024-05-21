@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+import { Open_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({ subsets: ["latin"] });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--playfair" });
+const opensans = Open_Sans({ subsets: ["latin"], variable: "--opensans" });
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={playfair.className}>{children}</body>
+			<body className={`${playfair.variable} ${opensans.variable}`}>{children}</body>
 		</html>
 	);
 }
