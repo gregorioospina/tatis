@@ -8,7 +8,7 @@ export default function Home() {
 	const { isSm, isLg } = useBreakpoint();
 
 	return (
-		<main className="flex min-h-screen pb-32 flex-col items-center">
+		<main className="flex min-h-screen flex-col items-center">
 			<Navbar />
 			<div className="relative min-h-[90svh] w-[100svw] lg:min-h-[80svh]">
 				<div className="z-40 p-3 bg-[linear-gradient(45deg,_rgb(255_255_255_/_51%)_0%,_rgba(0,_0,_0,_0)_36%)] lg:bg-[linear-gradient(45deg,_rgb(0_0_0)_0%,_rgba(0,_0,_0,_0)_46%)]  absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end">
@@ -27,7 +27,7 @@ export default function Home() {
 			</div>
 			<div className="relative min-h-[80svh] mb-20 w-[100svw] overflow-x-auto lg:min-h-[80svh]">
 				<p className="text-t-white text-4xl md:text-5xl sticky left-2 ml-[10svw] lg:ml-[20svw] mb-4 font-semibold">Épocas y Compositores</p>
-				<div className="grid grid-cols-[repeat(4_,_200px)] h-[500px] gap-x-2 pl-[10svw] lg:pl-[20svw]">
+				<div className="grid grid-cols-[repeat(4_,_200px)] h-[500px] md:h-[minmax(500px_,_80svh)] gap-x-2 pl-[10svw] lg:pl-[20svw]">
 					<div className="relative">
 						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
 							<p className="w-full text-left text-2xl font-bold">Tchaikovsky y la ciencia</p>
@@ -63,8 +63,8 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="relative min-h-[90svh] pb-10 w-[100svw] px-10 lg:px-[20svw] overflow-x-auto lg:min-h-[80svh]">
-				<p className="text-t-white text-4xl md:text-5xl sticky left-2 lg:ml-[20svw] mb-4 font-semibold">Mis Programas</p>
-				<div className="flex flex-col gap-y-10">
+				<p className="text-t-white text-4xl mb-10 md:text-5xl sticky left-2 font-semibold">Mis Programas</p>
+				<div className="flex flex-col gap-y-12">
 					<div className="p-3 ring-2 ring-t-white min-h-20 lg:w-4/6">
 						<p className="text-2xl md:text-3xl text-t-white">Conciertos privados</p>
 						<p className="md:text-md font-body font-extralight text-t-white">
@@ -92,6 +92,14 @@ export default function Home() {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 						<button className="text-t-white font-light underline font-body mt-4">Ponte en contacto</button>
+					</div>
+				</div>
+			</div>
+			<div className="min-h-[200svh] relative items-center flex flex-col justify-end pb-10 bg-[linear-gradient(180deg,_#000000_3%,_#141946_62%);] w-full">
+				<div className="absolute bottom-[22svh] h-8 bg-blue-600 rounded-full w-8 items-center flex flex-col justify-center"></div>
+				<div className="animate-rotate-y-1 h-[40svh] ring-1 ring-t-white rounded-full w-[40svh] items-center flex flex-col justify-center">
+					<div className="h-[30svh] animate-rotate-y-2 ring-1 ring-t-white rounded-full w-[30svh] items-center flex flex-col justify-center">
+						<div className="h-[15svh] ring-1 animate-rotate-y-3 ring-t-white rounded-full w-[15svh] items-center flex flex-col justify-center"></div>
 					</div>
 				</div>
 			</div>

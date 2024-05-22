@@ -16,11 +16,18 @@ const config: Config = {
 			},
 			animation: {
 				"loop-scroll": "loop-scroll 1.3s linear infinite",
+				"rotate-y-1": "rotate-y 19.3s linear infinite",
+				"rotate-y-2": "rotate-y 3.3s linear infinite",
+				"rotate-y-3": "rotate-y 7.3s linear infinite",
 			},
 			keyframes: {
 				"loop-scroll": {
 					from: { transform: "translateX(0)" },
 					to: { transform: "translateX(-100%)" },
+				},
+				"rotate-y": {
+					from: { transform: "rotateY(0deg)" },
+					to: { transform: "rotateY(360deg)" },
 				},
 			},
 			backgroundImage: {
