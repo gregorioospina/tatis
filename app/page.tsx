@@ -25,7 +25,7 @@ export default function Home() {
 					night.
 				</p>
 			</div>
-			<div className="relative min-h-[90svh] w-[100svw] overflow-x-auto lg:min-h-[80svh]">
+			<div className="relative min-h-[80svh] mb-20 w-[100svw] overflow-x-auto lg:min-h-[80svh]">
 				<p className="text-t-white text-4xl md:text-5xl sticky left-2 ml-[10svw] lg:ml-[20svw] mb-4 font-semibold">Épocas y Compositores</p>
 				<div className="grid grid-cols-[repeat(4_,_200px)] h-[500px] gap-x-2 pl-[10svw] lg:pl-[20svw]">
 					<div className="relative">
