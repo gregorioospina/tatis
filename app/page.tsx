@@ -96,11 +96,11 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="min-h-[200svh] relative items-center flex flex-col justify-end pb-10 bg-[linear-gradient(180deg,_#000000_3%,_#141946_62%);] w-full">
-				<div className="absolute bottom-[22svh] h-8 bg-blue-600 rounded-full w-8 items-center flex flex-col justify-center"></div>
-				<div className="animate-rotate-y-1 h-[40svh] ring-1 ring-t-white rounded-full w-[40svh] items-center flex flex-col justify-center">
-					<div className="h-[30svh] animate-rotate-y-2 ring-1 ring-t-white rounded-full w-[30svh] items-center flex flex-col justify-center">
-						<div className="h-[15svh] ring-1 animate-rotate-y-3 ring-t-white rounded-full w-[15svh] items-center flex flex-col justify-center"></div>
-					</div>
+				<div className="relative h-[40svh] w-[40svh] flex items-center justify-center">
+					<div className="absolute h-8 bg-blue-600 rounded-full w-8 items-center flex flex-col justify-center"></div>
+					<div className="absolute h-[15svh] ring-1 animate-rotate-y-3 ring-t-white rounded-full w-[15svh] items-center flex flex-col justify-center"></div>
+					<div className="absolute h-[30svh] animate-rotate-y-2 ring-1 ring-t-white rounded-full w-[30svh] items-center flex flex-col justify-center"></div>
+					<div className="absolute animate-rotate-y-1 h-[40svh] ring-1 ring-t-white rounded-full w-[40svh] items-center flex flex-col justify-center"></div>
 				</div>
 			</div>
 		</main>
