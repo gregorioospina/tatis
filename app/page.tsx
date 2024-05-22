@@ -27,7 +27,7 @@ export default function Home() {
 			</div>
 			<div className="relative min-h-[80svh] mb-20 w-[100svw] overflow-x-auto lg:min-h-[80svh]">
 				<p className="text-t-white text-4xl md:text-5xl sticky left-2 ml-[10svw] lg:ml-[20svw] mb-4 font-semibold">Épocas y Compositores</p>
-				<div className="grid grid-cols-[repeat(4_,_200px)] h-[500px] md:h-[minmax(500px_,_80svh)] gap-x-2 pl-[10svw] lg:pl-[20svw]">
+				<div className="grid lg:grid-cols-[repeat(4_,_20svh)] grid-cols-[repeat(4_,_200px)] h-[500px] lg:h-[60svh] gap-x-2 pl-[10svw] lg:pl-[20svw]">
 					<div className="relative">
 						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
 							<p className="w-full text-left text-2xl font-bold">Tchaikovsky y la ciencia</p>
