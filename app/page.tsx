@@ -5,7 +5,7 @@ import Navbar from "./components/navbar";
 import { useBreakpoint } from "./hooks/useGPTBreakpoint";
 
 export default function Home() {
-	const { isSm, isLg } = useBreakpoint();
+	const { isSm } = useBreakpoint();
 
 	return (
 		<main className="flex min-h-screen flex-col items-center">
@@ -97,7 +97,7 @@ export default function Home() {
 			</div>
 			<div className="min-h-[250svh] pb-[25svh] relative items-center flex flex-col justify-end bg-[linear-gradient(180deg,_#000000_3%,_#141946_62%);] w-full">
 				<div className="relative h-[40svh] w-[40svh] flex items-center justify-center">
-					<div className="absolute h-6 bg-blue-600 rounded-full w-6 md:h-8 md:w-8 items-center flex flex-col justify-center"></div>
+					<div className="absolute h-6 bg-amber-500 rounded-full w-6 md:h-8 md:w-8 items-center flex flex-col justify-center"></div>
 					<div className="absolute h-[15svh] ring-1 animate-rotate-y-3 ring-t-white rounded-full w-[15svh] items-center flex flex-col justify-center"></div>
 					<div className="absolute h-[30svh] animate-rotate-y-2 ring-1 ring-t-white rounded-full w-[30svh] items-center flex flex-col justify-center"></div>
 					<div className="absolute animate-rotate-y-1 h-[40svh] ring-1 ring-t-white rounded-full w-[40svh] items-center flex flex-col justify-center"></div>
