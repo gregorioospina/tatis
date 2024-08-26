@@ -21,8 +21,8 @@ export default function Home() {
 			</div>
 			<div className="relative min-h-[90svh] py-[5%] md:min-h-[60svh] w-[100svw] lg:min-h-[80svh] flex items-center justify-center">
 				<p className="text-t-white max-w-[85svw] md:max-w-[50svw] text-sm lg:text-xl whitespace-break-spaces text-justify">
-					En 1825 Beethoven, ya muy enfermo y completamente sordo, escribe una de sus últimas obras- La Gran Fuga( op. 133). Cuando su amigo y violinista famoso
-					Shuppanzig, ve la partitura, exclama: Pero Maestro! Esto es implosible de tocar, parece un rompecabezas! A lo que Beethoven responde: Si, yo no
+					En 1825 Beethoven, ya muy enfermo y completamente sordo, escribe una de sus últimas obras - La Gran Fuga (op. 133). Cuando su amigo y violinista
+					famoso Shuppanzig, ve la partitura, exclama: Pero Maestro! Esto es implosible de tocar, parece un rompecabezas! A lo que Beethoven responde: Si, yo no
 					escribí esta obra para ustedes, sino para futuras generaciones. {"\n"}
 					{"\n"}Que así sea! Me conmueve mucho esta historia, un grán hombre, despidiéndose de la vida, está escribiendo para nosotros una joya musical. El
 					pensó en nosotros, nos invitó atravesar el tiempo y entrar al mundo de su música - hace 200 años! {"\n"}
