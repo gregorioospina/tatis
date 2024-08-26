@@ -8,6 +8,7 @@ const opensans = Open_Sans({ subsets: ["latin"], variable: "--opensans" });
 export const metadata: Metadata = {
 	title: "Tatiana Voronetska",
 	description: "Aprender no tiene límites",
+	themeColor: "#000000",
 };
 
 export default function RootLayout({
