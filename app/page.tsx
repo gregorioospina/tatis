@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import CTA from "./components/cta";
 import Navbar from "./components/navbar";
 import { useBreakpoint } from "./hooks/useGPTBreakpoint";
 
@@ -36,7 +37,7 @@ export default function Home() {
 					<div className="relative">
 						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
 							<p className="w-full h-[120px] text-left font-body text-xl font-bold">⁠Clases privadas de piano</p>
-							<button className=" font-body text-t-white font-light underline">Conoce más</button>
+							<CTA waMessage="Hola! Quiero saber más sobre las clases privadas de piano" title="Conoce más" />
 						</div>
 						<Image src={"/imgs/keys/1.png"} fill alt="keys 1" />
 						<div className="bg-black absolute top-0 rounded-bl-lg right-0 w-12 bottom-[200px]"></div>
@@ -44,7 +45,7 @@ export default function Home() {
 					<div className="relative">
 						<div className="absolute gap-y-3 p-2 top-0 bottom-0 left-0 right-0 items-end bg-t-blue/5 z-40 flex flex-col justify-end">
 							<p className="w-full h-[120px] font-body text-left text-lg font-bold">Conciertos temáticos con familias y amigos</p>
-							<button className=" font-body text-t-white font-light underline">Conoce más</button>
+							<CTA waMessage="Hola! Quiero saber más sobre los conciertos temáticos con familias y amigos" title="Conoce más" />
 						</div>{" "}
 						<Image src={"/imgs/keys/2.png"} fill alt="keys 1" />
 						<div className="bg-black absolute rounded-bl-lg top-0 right-0 w-12 bottom-[200px]"></div>
@@ -52,7 +53,7 @@ export default function Home() {
 					<div className="relative">
 						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
 							<p className="w-full h-[120px] font-body text-left text-lg font-bold">Conciertos grandes para ocasiones especiales</p>
-							<button className="font-body text-t-white font-light underline">Conoce más</button>
+							<CTA waMessage="Hola! Quiero saber más sobre los conciertos grandes para ocasiones especiales" title="Conoce más" />
 						</div>{" "}
 						<Image src={"/imgs/keys/3.png"} fill alt="keys 1" />
 						<div className="bg-black absolute top-0 rounded-bl-lg right-0 w-12 bottom-[200px]"></div>
@@ -60,7 +61,7 @@ export default function Home() {
 					<div className="relative">
 						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-blue/5 z-40 flex flex-col justify-end">
 							<p className="w-full h-[120px] font-body text-left text-lg font-bold">Clases sobre la historia de la música para adultos</p>
-							<button className="font-body  text-t-white font-light underline">Conoce más</button>
+							<CTA waMessage="Hola! Quiero saber más sobre las clases sobre la historia de la música para adultos" title="Conoce más" />
 						</div>{" "}
 						<Image src={"/imgs/keys/4.png"} fill alt="keys 1" />
 						<div className="bg-black absolute top-0 rounded-bl-lg right-0 w-12 bottom-[200px]"></div>
@@ -68,16 +69,16 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="relative min-h-[90svh] pb-10 w-[100svw] px-10 flex justify-center flex-col items-center overflow-x-auto lg:min-h-[80svh]">
-				<p className="text-t-white text-4xl mb-10 md:text-5xl text-center sticky left-2 font-semibold">¿Qué habilidades fomenta el aprendizaje musical?</p>
+				<p className="text-t-white text-3xl mb-10 md:text-5xl text-center sticky left-2 font-semibold">¿Qué habilidades fomenta el aprendizaje musical?</p>
 				<div className="flex flex-col gap-y-12 items-center">
 					<ul className="p-5 ring-2 ring-t-white min-h-20 lg:w-4/6 flex flex-col gap-y-3">
-						<li className="md:text-lg text- font-body text-t-white">La música estimula cerebro, mejora memoria, atención y concentración.</li>
+						<li className="md:text-lg text- font-body text-t-white">La música estimula el cerebro, mejora memoria, atención y concentración.</li>
 						<li className="md:text-lg font-body text-t-white">Ayuda a Los niños y adolescentes expresar y comprender emociones, regular estado de ánimo</li>
 						<li className="md:text-lg font-body text-t-white">
-							⁠Desarrolla la motricidad fina y gruesa . Tocar piano requiere la coordinación de ambas manos y ambos hemisferios cerebrales.
+							⁠Desarrolla la motricidad fina y gruesa. Tocar piano requiere la coordinación de ambas manos y ambos hemisferios cerebrales.
 						</li>
 						<li className="md:text-lg font-body text-t-white">
-							⁠Desarrolla habilidades de cooperación y trabajo en equipo en actividades de canto, danzas , conciertos en colegios.
+							⁠Desarrolla habilidades de cooperación y trabajo en equipo en actividades de canto, danzas, conciertos en colegios.
 						</li>
 						<li className="md:text-lg font-body text-t-white">Desarrolla el gusto estético y pertenencia a la cultura musical milenaria.</li>
 					</ul>
@@ -99,7 +100,7 @@ export default function Home() {
 					</div>
 					<div className="flex flex-col gap-y-1">
 						<p className="font-body">¿Interesado en saber más sobre algún programa?</p>
-						<button className="text-t-white font-light underline font-body mt-4">Ponte en contacto</button>
+						<CTA waMessage="Hola! Quiero saber más sobre los programas empresariales" title="Ponte en contacto conmigo" />
 					</div>
 				</div>
 			</div>
