@@ -11,7 +11,7 @@ export default function Home() {
 		<main className="flex min-h-screen flex-col items-center">
 			<Navbar />
 			<div className="relative min-h-[90svh] w-[100svw] lg:min-h-[80svh]">
-				<div className="z-40 p-3 bg-[linear-gradient(45deg,_rgb(255_255_255_/_51%)_0%,_rgba(0,_0,_0,_0)_36%)] lg:bg-[linear-gradient(45deg,_rgb(0_0_0)_0%,_rgba(0,_0,_0,_0)_46%)]  absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end">
+				<div className="z-40 p-3 md:px-10 bg-[linear-gradient(45deg,_rgb(255_255_255_/_51%)_0%,_rgba(0,_0,_0,_0)_36%)] lg:bg-[linear-gradient(45deg,_rgb(0_0_0)_0%,_rgba(0,_0,_0,_0)_46%)]  absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end">
 					<h4 className="text-t-white text-5xl lg:text-7xl">Tatiana</h4>
 					<h1 className="text-t-white text-7xl lg:text-9xl">Voronetska</h1>
 					<p className="text-t-white font-body font-extralight text-lg">Aprender no tiene límites</p>
@@ -30,11 +30,11 @@ export default function Home() {
 					aprender escuchar y disfrutar las riquezas musicales.
 				</p>
 			</div>
-			<div className="relative min-h-[80svh] mb-20 w-[100svw] overflow-x-auto lg:min-h-[80svh]">
+			<div className="relative min-h-[80svh] mb-6 w-[100svw] overflow-x-auto lg:min-h-[80svh]">
 				<p className="text-t-white mx-[10svw] md:mx-0 text-4xl md:text-5xl sticky left-2 justify-center lg:flex mb-4 font-semibold">¿Cómo te puedo enseñar?</p>
-				<div className="grid mx-[10svw] md:mx-0 lg:grid-cols-[repeat(4_,_20svh)] grid-cols-[repeat(4_,_200px)] h-[500px] lg:h-[60svh] gap-x-2 md:justify-center">
+				<div className="grid mx-[10svw] md:mx-0 lg:grid-cols-[repeat(4_,_20svw)] grid-cols-[repeat(4_,_200px)] h-[500px] lg:h-[70svh] gap-x-2 md:justify-center">
 					<div className="relative">
-						<div className="absolute gap-y-3 p-3 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
+						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
 							<p className="w-full h-[120px] text-left font-body text-xl font-bold">⁠Clases privadas de piano</p>
 							<button className=" font-body text-t-white font-light underline">Conoce más</button>
 						</div>
@@ -42,7 +42,7 @@ export default function Home() {
 						<div className="bg-black absolute top-0 rounded-bl-lg right-0 w-12 bottom-[200px]"></div>
 					</div>
 					<div className="relative">
-						<div className="absolute gap-y-3 p-3 top-0 bottom-0 left-0 right-0 items-end bg-t-blue/5 z-40 flex flex-col justify-end">
+						<div className="absolute gap-y-3 p-2 top-0 bottom-0 left-0 right-0 items-end bg-t-blue/5 z-40 flex flex-col justify-end">
 							<p className="w-full h-[120px] font-body text-left text-lg font-bold">Conciertos temáticos con familias y amigos</p>
 							<button className=" font-body text-t-white font-light underline">Conoce más</button>
 						</div>{" "}
@@ -50,7 +50,7 @@ export default function Home() {
 						<div className="bg-black absolute rounded-bl-lg top-0 right-0 w-12 bottom-[200px]"></div>
 					</div>
 					<div className="relative">
-						<div className="absolute gap-y-3 p-3 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
+						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
 							<p className="w-full h-[120px] font-body text-left text-lg font-bold">Conciertos grandes para ocasiones especiales</p>
 							<button className="font-body text-t-white font-light underline">Conoce más</button>
 						</div>{" "}
@@ -58,7 +58,7 @@ export default function Home() {
 						<div className="bg-black absolute top-0 rounded-bl-lg right-0 w-12 bottom-[200px]"></div>
 					</div>
 					<div className="relative">
-						<div className="absolute gap-y-3 p-3 top-0 bottom-0 left-0 right-0 items-end bg-t-blue/5 z-40 flex flex-col justify-end">
+						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-blue/5 z-40 flex flex-col justify-end">
 							<p className="w-full h-[120px] font-body text-left text-lg font-bold">Clases sobre la historia de la música para adultos</p>
 							<button className="font-body  text-t-white font-light underline">Conoce más</button>
 						</div>{" "}
@@ -68,34 +68,37 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="relative min-h-[90svh] pb-10 w-[100svw] px-10 flex justify-center flex-col items-center overflow-x-auto lg:min-h-[80svh]">
-				<p className="text-t-white text-4xl mb-10 md:text-5xl sticky left-2 font-semibold">Mis Programas</p>
+				<p className="text-t-white text-4xl mb-10 md:text-5xl text-center sticky left-2 font-semibold">¿Qué habilidades fomenta el aprendizaje musical?</p>
 				<div className="flex flex-col gap-y-12 items-center">
-					<div className="p-3 ring-2 ring-t-white min-h-20 lg:w-4/6">
-						<p className="text-2xl md:text-3xl text-t-white">Conciertos privados</p>
-						<p className="md:text-md font-body font-extralight text-t-white">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-						<button className="text-t-white font-light underline font-body mt-4">Ponte en contacto</button>
+					<ul className="p-5 ring-2 ring-t-white min-h-20 lg:w-4/6 flex flex-col gap-y-3">
+						<li className="md:text-lg text- font-body text-t-white">La música estimula cerebro, mejora memoria, atención y concentración.</li>
+						<li className="md:text-lg font-body text-t-white">Ayuda a Los niños y adolescentes expresar y comprender emociones, regular estado de ánimo</li>
+						<li className="md:text-lg font-body text-t-white">
+							⁠Desarrolla la motricidad fina y gruesa . Tocar piano requiere la coordinación de ambas manos y ambos hemisferios cerebrales.
+						</li>
+						<li className="md:text-lg font-body text-t-white">
+							⁠Desarrolla habilidades de cooperación y trabajo en equipo en actividades de canto, danzas , conciertos en colegios.
+						</li>
+						<li className="md:text-lg font-body text-t-white">Desarrolla el gusto estético y pertenencia a la cultura musical milenaria.</li>
+					</ul>
+				</div>
+			</div>
+			<div className="relative min-h-[90svh] pb-10 w-[100svw] px-10 flex justify-center flex-col items-center overflow-x-auto lg:min-h-[80svh]">
+				<p className="text-t-white text-4xl mb-10 md:text-5xl sticky left-2 font-semibold">Programas empresariales</p>
+				<div className="flex flex-col gap-y-12 items-center">
+					<div className="h-full w-full flex flex-col justify-center items-center md:flex-row gap-4">
+						<div className=" relative border border-[#2c2c2c] w-[100%] sm:w-[80%] md:w-[50%] h-full">
+							<Image src={"/imgs/poster-3.png"} width={500} height={1000} alt="poster 3" />
+						</div>
+						<div className=" relative border border-[#2c2c2c] w-[100%] sm:w-[80%] md:w-[50%] h-full">
+							<Image src={"/imgs/poster-2.png"} width={500} height={1000} alt="poster 2" />
+						</div>
+						<div className=" relative border border-[#2c2c2c] w-[100%] sm:w-[80%] md:w-[50%] h-full">
+							<Image src={"/imgs/poster-1.png"} width={500} height={1000} alt="poster 1" />
+						</div>
 					</div>
-					<div className="p-3 ring-2 ring-t-white min-h-20 lg:w-4/6">
-						<p className="text-2xl md:text-3xl text-t-white">Conciertos privados</p>
-						<p className="md:text-md font-body font-extralight text-t-white">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-						<button className="text-t-white font-light underline font-body mt-4">Ponte en contacto</button>
-					</div>
-					<div className="p-3 ring-2 ring-t-white min-h-20 lg:w-4/6">
-						<p className="text-2xl md:text-3xl text-t-white">Conciertos privados</p>
-						<p className="md:text-md font-body font-extralight text-t-white">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-						<button className="text-t-white font-light underline font-body mt-4">Ponte en contacto</button>
-					</div>
-					<div className="p-3 ring-2 ring-t-white min-h-20 lg:w-4/6">
-						<p className="text-2xl md:text-3xl text-t-white">Conciertos privados</p>
-						<p className="md:text-md font-body font-extralight text-t-white">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
+					<div className="flex flex-col gap-y-1">
+						<p className="font-body">¿Interesado en saber más sobre algún programa?</p>
 						<button className="text-t-white font-light underline font-body mt-4">Ponte en contacto</button>
 					</div>
 				</div>

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 
 interface INavbar {}
@@ -9,12 +8,12 @@ const Navbar = (props: INavbar) => {
 	const [playing, setPlaying] = useState<boolean>(false);
 
 	return (
-		<div className="z-50 px-2 py-1 bg-black fixed top-0 left-0 right-0 h-13 lg:h-14 lg:px-[20%] flex items-center justify-between">
+		<div className="z-50 px-2 py-1 bg-black fixed top-0 left-0 right-0 h-13 lg:h-14 flex items-center justify-between">
 			<div>
 				<p className="font-title italic font-semibold">Voronetska</p>
 			</div>
 			<div>
-				<button className="bg-black rounded-full w-10 h-10 shadow-sm ring-1 ring-white" onClick={() => setPlaying((p) => !p)}>
+				{/* <button className="bg-black rounded-full w-10 h-10 shadow-sm ring-1 ring-white" onClick={() => setPlaying((p) => !p)}>
 					{playing ? (
 						<div className="max-w-10 max-h-10 overflow-hidden flex rounded-full">
 							<div className="animate-loop-scroll min-w-[40px]">
@@ -31,7 +30,7 @@ const Navbar = (props: INavbar) => {
 							</div>
 						</div>
 					)}
-				</button>
+				</button> */}
 			</div>
 		</div>
 	);
