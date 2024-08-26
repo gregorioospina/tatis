@@ -36,7 +36,7 @@ export default function Home() {
 				<div className="grid mx-[10svw] md:mx-0 lg:grid-cols-[repeat(4_,_20svw)] grid-cols-[repeat(4_,_200px)] h-[500px] lg:h-[70svh] gap-x-2 md:justify-center">
 					<div className="relative">
 						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
-							<p className="w-full h-[120px] text-left font-body text-xl font-bold">⁠Clases privadas de piano</p>
+							<p className="w-full h-[120px] text-white text-left font-body text-xl font-bold">⁠Clases privadas de piano</p>
 							<CTA waMessage="Hola! Quiero saber más sobre las clases privadas de piano" title="Conoce más" />
 						</div>
 						<Image src={"/imgs/keys/1.png"} fill alt="keys 1" />
@@ -44,7 +44,7 @@ export default function Home() {
 					</div>
 					<div className="relative">
 						<div className="absolute gap-y-3 p-2 top-0 bottom-0 left-0 right-0 items-end bg-t-blue/5 z-40 flex flex-col justify-end">
-							<p className="w-full h-[120px] font-body text-left text-lg font-bold">Conciertos temáticos con familias y amigos</p>
+							<p className="w-full h-[120px] text-white font-body text-left text-lg font-bold">Conciertos temáticos con familias y amigos</p>
 							<CTA waMessage="Hola! Quiero saber más sobre los conciertos temáticos con familias y amigos" title="Conoce más" />
 						</div>{" "}
 						<Image src={"/imgs/keys/2.png"} fill alt="keys 1" />
@@ -52,7 +52,7 @@ export default function Home() {
 					</div>
 					<div className="relative">
 						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-green/5 z-40 flex flex-col justify-end">
-							<p className="w-full h-[120px] font-body text-left text-lg font-bold">Conciertos grandes para ocasiones especiales</p>
+							<p className="w-full h-[120px] text-white font-body text-left text-lg font-bold">Conciertos grandes para ocasiones especiales</p>
 							<CTA waMessage="Hola! Quiero saber más sobre los conciertos grandes para ocasiones especiales" title="Conoce más" />
 						</div>{" "}
 						<Image src={"/imgs/keys/3.png"} fill alt="keys 1" />
@@ -60,7 +60,7 @@ export default function Home() {
 					</div>
 					<div className="relative">
 						<div className="absolute gap-y-3 p-4 top-0 bottom-0 left-0 right-0 items-end bg-t-blue/5 z-40 flex flex-col justify-end">
-							<p className="w-full h-[120px] font-body text-left text-lg font-bold">Clases sobre la historia de la música para adultos</p>
+							<p className="w-full h-[120px] text-white font-body text-left text-lg font-bold">Clases sobre la historia de la música para adultos</p>
 							<CTA waMessage="Hola! Quiero saber más sobre las clases sobre la historia de la música para adultos" title="Conoce más" />
 						</div>{" "}
 						<Image src={"/imgs/keys/4.png"} fill alt="keys 1" />
