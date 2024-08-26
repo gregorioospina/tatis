@@ -99,7 +99,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="flex flex-col gap-y-1">
-						<p className="font-body text-white">¿Interesado en saber más sobre algún programa?</p>
+						<p className="font-body text-center text-white">¿Interesado en saber más sobre algún programa?</p>
 						<CTA waMessage="Hola! Quiero saber más sobre los programas empresariales" title="Ponte en contacto conmigo" />
 					</div>
 				</div>
