@@ -16,7 +16,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className="bg-black">
+		<html lang="en" className="bg-black text-white">
 			<body className={`${playfair.variable} ${opensans.variable}`}>{children}</body>
 		</html>
 	);
