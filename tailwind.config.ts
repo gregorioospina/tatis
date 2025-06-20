@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-	content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
+	content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
 			fontFamily: {
@@ -19,6 +19,7 @@ const config: Config = {
 				"rotate-y-1": "rotate-y 19.3s linear infinite",
 				"rotate-y-2": "rotate-y 3.3s linear infinite",
 				"rotate-y-3": "rotate-y 7.3s linear infinite",
+				"fade-out": "fade-out 0.3s ease-in-out",
 			},
 			keyframes: {
 				"loop-scroll": {
@@ -28,6 +29,10 @@ const config: Config = {
 				"rotate-y": {
 					from: { transform: "rotateY(0deg)" },
 					to: { transform: "rotateY(360deg)" },
+				},
+				"fade-out": {
+					from: { opacity: "1" },
+					to: { opacity: "0" },
 				},
 			},
 			backgroundImage: {

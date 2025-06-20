@@ -1,18 +1,20 @@
+import CTA from "@/components/cta";
 import { LANG_COOKIE } from "@/components/LanguageSwitcher";
+import Navbar from "@/components/navbar";
+import { useBreakpoint } from "@/hooks/useGPTBreakpoint";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import Image from "next/image";
-import CTA from "../components/cta";
-import Navbar from "../components/navbar";
-import { useBreakpoint } from "../hooks/useGPTBreakpoint";
+import { useEffect, useState } from "react";
 
 export const getServerSideProps: GetServerSideProps = async ({ req, ...context }) => {
 	let locale = context.locale as string | undefined;
 	const localeCookie = req.cookies[LANG_COOKIE];
 
 	const translations = await serverSideTranslations(localeCookie ?? locale ?? "ru", ["common"]);
+	console.error(translations, localeCookie, locale);
 	return {
 		props: {
 			...translations,
@@ -23,6 +25,18 @@ export const getServerSideProps: GetServerSideProps = async ({ req, ...context }
 export default function Home(_: InferGetServerSidePropsType<typeof getServerSideProps>) {
 	const { isSm } = useBreakpoint();
 	const { t } = useTranslation();
+
+	const [willRemove, setWillRemove] = useState<boolean>(false);
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setWillRemove(true);
+		}, 1300);
+		setTimeout(() => {
+			setIsLoading(false);
+		}, 1600);
+	}, []);
 
 	return (
 		<>
@@ -125,6 +139,11 @@ export default function Home(_: InferGetServerSidePropsType<typeof getServerSide
 						<div className="absolute animate-rotate-y-1 h-[40svh] ring-1 ring-t-white rounded-full w-[40svh] items-center flex flex-col justify-center"></div>
 					</div>
 				</div>
+				{isLoading && (
+					<div className={`z-50 fixed top-0 left-0 right-0 bottom-0 bg-black flex items-center justify-center ${willRemove ? "animate-fade-out" : ""}`}>
+						<p className="font-title text-white italic font-semibold">{t("tatis.navbar.brand")}</p>
+					</div>
+				)}
 			</main>
 		</>
 	);
