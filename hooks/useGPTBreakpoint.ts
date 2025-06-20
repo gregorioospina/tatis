@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "../../tailwind.config";
+import tailwindConfig from "../tailwind.config";
 
 export const useBreakpoint = () => {
 	const [breakpoint, setBreakpoint] = useState<string | null>(null);
