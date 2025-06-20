@@ -1,3 +1,4 @@
+import { LANG_COOKIE } from "@/components/LanguageSwitcher";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -8,26 +9,10 @@ import Navbar from "../components/navbar";
 import { useBreakpoint } from "../hooks/useGPTBreakpoint";
 
 export const getServerSideProps: GetServerSideProps = async ({ req, ...context }) => {
-	const userLanguage = (req.headers["accept-language"] ?? "")?.split(",");
-
 	let locale = context.locale as string | undefined;
-	let index = 0;
+	const localeCookie = req.cookies[LANG_COOKIE];
 
-	while (locale === undefined && !!userLanguage[index]) {
-		if (userLanguage[index].includes("ru")) {
-			locale = "ru";
-			break;
-		} else if (userLanguage[index].includes("en")) {
-			locale = "en";
-			break;
-		} else if (userLanguage[index].includes("es")) {
-			locale = "es";
-			break;
-		}
-		index++;
-	}
-
-	const translations = await serverSideTranslations(locale ?? "ru", ["common"]);
+	const translations = await serverSideTranslations(localeCookie ?? locale ?? "ru", ["common"]);
 	return {
 		props: {
 			...translations,
@@ -50,8 +35,8 @@ export default function Home(_: InferGetServerSidePropsType<typeof getServerSide
 				<Navbar />
 				<div className="relative min-h-[90svh] w-[100svw] lg:min-h-[80svh]">
 					<div className="z-40 p-3 md:px-10 bg-[linear-gradient(45deg,_rgb(255_255_255_/_51%)_0%,_rgba(0,_0,_0,_0)_36%)] lg:bg-[linear-gradient(45deg,_rgb(0_0_0)_0%,_rgba(0,_0,_0,_0)_46%)]  absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end">
-						<h4 className="text-t-white text-5xl lg:text-7xl">{t("tatis.hero.first_name")}</h4>
-						<h1 className="text-t-white text-7xl lg:text-9xl">{t("tatis.hero.last_name")}</h1>
+						<h4 className="text-t-white text-4xl lg:text-7xl">{t("tatis.hero.first_name")}</h4>
+						<h1 className="text-t-white text-6xl lg:text-9xl">{t("tatis.hero.last_name")}</h1>
 						<p className="text-t-white font-body font-extralight text-lg">{t("tatis.hero.tagline")}</p>
 					</div>
 					<Image className="object-cover" priority src={isSm ? "/imgs/main.JPG" : "/imgs/main-desktop.JPG"} fill alt={t("tatis.hero.image_alt")}></Image>

@@ -1,4 +1,7 @@
+import { setCookie } from "cookies-next";
 import { useRouter } from "next/router";
+
+export const LANG_COOKIE = "language_pref";
 
 const languages = [
 	{ code: "es", name: "Español", flag: "🇪🇸" },
@@ -12,6 +15,7 @@ export default function LanguageSwitcher() {
 	const changeLanguage = (lng: string) => {
 		// Use Next.js locale routing instead of query parameters
 		const { pathname, asPath, query } = router;
+		setCookie(LANG_COOKIE, lng);
 		router.push({ pathname, query }, asPath, { locale: lng });
 	};
 
