@@ -10,7 +10,7 @@ const Navbar = (props: INavbar) => {
 	return (
 		<div className="z-50 px-2 py-1 bg-black fixed top-0 left-0 right-0 h-13 lg:h-14 flex items-center justify-between">
 			<div>
-				<p className="font-title text-white italic font-semibold">Voronetska</p>
+				<p className="font-title text-white italic font-semibold">{t("tatis.navbar.brand")}</p>
 			</div>
 			<div>
 				{/* <button className="bg-black rounded-full w-10 h-10 shadow-sm ring-1 ring-white" onClick={() => setPlaying((p) => !p)}>
