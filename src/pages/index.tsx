@@ -13,7 +13,9 @@ export const getServerSideProps: GetServerSideProps = async ({ req, ...context }
 	let locale = context.locale as string | undefined;
 	const localeCookie = req.cookies[LANG_COOKIE];
 
-	const translations = await serverSideTranslations(localeCookie ?? locale ?? "ru", ["common"]);
+	const lang = navigator.language.includes("es") ? "es" : navigator.language.includes("en") ? "en" : "ru";
+
+	const translations = await serverSideTranslations(localeCookie ?? lang, ["common"]);
 	console.error(translations, localeCookie, locale);
 	return {
 		props: {
